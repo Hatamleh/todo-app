@@ -115,7 +115,7 @@
         type="text"
         autocomplete="given-name"
         bind:value={firstName}
-        data-testid="first-name"
+        data-test-id="first-name"
         aria-invalid={firstNameError ? 'true' : undefined}
         class="field {firstNameError ? 'field-invalid' : ''}"
       />
@@ -134,7 +134,7 @@
         type="text"
         autocomplete="family-name"
         bind:value={lastName}
-        data-testid="last-name"
+        data-test-id="last-name"
         aria-invalid={lastNameError ? 'true' : undefined}
         class="field {lastNameError ? 'field-invalid' : ''}"
       />
@@ -151,7 +151,7 @@
         type="email"
         autocomplete="email"
         bind:value={email}
-        data-testid="email"
+        data-test-id="email"
         aria-invalid={emailError ? 'true' : undefined}
         class="field {emailError ? 'field-invalid' : ''}"
       />
@@ -170,7 +170,7 @@
         type="password"
         autocomplete="new-password"
         bind:value={password}
-        data-testid="password"
+        data-test-id="password"
         aria-invalid={passwordError ? 'true' : undefined}
         class="field {passwordError ? 'field-invalid' : ''}"
       />
@@ -189,7 +189,7 @@
         type="password"
         autocomplete="new-password"
         bind:value={confirmPassword}
-        data-testid="confirm-password"
+        data-test-id="confirm-password"
         aria-invalid={confirmPasswordError ? 'true' : undefined}
         class="field {confirmPasswordError ? 'field-invalid' : ''}"
       />
@@ -200,7 +200,7 @@
       {/if}
     </div>
 
-    <button type="submit" data-testid="submit" disabled={loading || !ready.current} class="btn btn-primary w-full">
+    <button type="submit" data-test-id="submit" disabled={loading || !ready.current} class="btn btn-primary w-full">
       {loading ? 'Creating account…' : 'Signup'}
     </button>
 
