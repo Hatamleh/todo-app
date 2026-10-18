@@ -77,7 +77,7 @@
         type="email"
         autocomplete="email"
         bind:value={email}
-        data-testid="email"
+        data-test-id="email"
         aria-invalid={emailError ? 'true' : undefined}
         class="field {emailError ? 'field-invalid' : ''}"
       />
@@ -96,7 +96,7 @@
         type="password"
         autocomplete="current-password"
         bind:value={password}
-        data-testid="password"
+        data-test-id="password"
         aria-invalid={passwordError ? 'true' : undefined}
         class="field {passwordError ? 'field-invalid' : ''}"
       />
@@ -109,7 +109,7 @@
       type="submit"
       id="submit"
       name="submit"
-      data-testid="submit"
+      data-test-id="submit"
       disabled={loading || !ready.current}
       class="btn btn-primary w-full"
     >

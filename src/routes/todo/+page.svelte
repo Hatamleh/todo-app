@@ -66,7 +66,7 @@
   <section class="surface space-y-4 p-8">
     <div>
       <span class="eyebrow">Your list</span>
-      <h1 data-testid="welcome" class="font-display text-3xl font-bold text-foreground">
+      <h1 data-test-id="welcome" class="font-display text-3xl font-bold text-foreground">
         {greeting()} {displayName(data.user?.firstName)}
       </h1>
     </div>
