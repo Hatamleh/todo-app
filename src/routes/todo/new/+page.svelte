@@ -78,7 +78,7 @@
         name="item"
         type="text"
         bind:value={newTodo}
-        data-testid="new-todo"
+        data-test-id="new-todo-input"
         aria-invalid={newTodoError ? 'true' : undefined}
         class="field {newTodoError ? 'field-invalid' : ''}"
       />
@@ -89,7 +89,7 @@
 
     <button
       type="submit"
-      data-testid="submit-newTask"
+      data-test-id="submit-todo"
       disabled={loading || !ready.current}
       class="btn btn-primary w-full"
     >

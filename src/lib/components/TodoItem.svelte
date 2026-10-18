@@ -36,7 +36,7 @@
 </script>
 
 <li
-  data-testid="todo-item"
+  data-test-id="todo-item"
   data-completed={todo.isCompleted}
   class="flex items-center gap-3 rounded-card border px-4 py-3 transition-colors {todo.isCompleted
     ? 'border-secondary/40 bg-secondary/10'
@@ -65,7 +65,7 @@
     type="button"
     onclick={remove}
     disabled={busy || !ready.current}
-    data-testid="delete"
+    data-test-id="delete"
     aria-label={`Delete ${todo.item}`}
     class="shrink-0 rounded-pill p-2 text-muted-foreground transition-colors hover:bg-destructive/15 hover:text-destructive disabled:cursor-not-allowed disabled:opacity-50"
   >

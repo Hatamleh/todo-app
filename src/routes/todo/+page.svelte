@@ -73,7 +73,7 @@
 
     <a
       href="/todo/new"
-      data-testid="add"
+      data-test-id="add"
       class="inline-flex items-center gap-2 pt-2 text-sm text-muted-foreground transition-colors hover:text-primary"
     >
       <span
